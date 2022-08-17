@@ -12,7 +12,9 @@ This solution contains code to help build the components of an Azure Synapse Ana
 	
 The architecture of the solution diagrammed below.  
 
-![alt text](https://github.com/hfoley/EDU/blob/master/images/SynapseLoadDiagram.jpg?raw=true)
+![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Data%20Lakehouse01.jpg?raw=true)
+
+![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Data%20Lakehouse02.jpg?raw=true)
 
 # Parameter File Driven 
 All the files ran will be driven off of one parameter file.  You'll need to fill this out with either existing components in Azure or ones that will be created.   
