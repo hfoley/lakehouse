@@ -1,16 +1,14 @@
 # Building Lakehouse with Azure Synapse Analytics
-This workshop we'll show how we can setup a full data lake house architecture, from soup to nuts.  We'll build out the components in Azure using automated scripts, including metadata driven pipelines to saturate your data lake.  We'll also build out tables and connect Power BI to them to utilize the data.  
+In this workshop we'll show how we can setup a full data lake house architecture, from soup to nuts.  We'll build out the components in Azure using PowerShell automated scripts, including metadata driven pipelines to saturate your data lake.  We'll also build out tables and views and connect Power BI to them.  
 		
 	1. Build components in Azure with PowerShell scripts 
 	2. Build and run metadata driven pipeline to build data lake
-	3. Build table/view in Synapse workspace 
+	3. Build table/view in Synapse Analytics with serverless SQL pool 
     4. Connect to table with Power BI  
 
 
-# The Data Lakehouse Architecture
-This solution contains code to help build the components of an Azure Synapse Analytics environment including metadata tables and some metadata driven extract and load pipelines. This solution contains PowerShell, SQL scripts, and json files to build out all the components listed below.   
 	
-The architecture of the solution diagrammed below.  
+The architecture of the solution built in this workshop is diagrammed below.  
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Data%20Lakehouse01.jpg?raw=true)
 
