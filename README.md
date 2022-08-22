@@ -14,12 +14,6 @@ The architecture of the solution built in this workshop is diagrammed below.
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Data%20Lakehouse02.jpg?raw=true)
 
-# Parameter File Driven 
-All the files ran will be driven off of one parameter file.  You'll need to fill this out with either existing components in Azure or ones that will be created.   
-	
-Below are the details of the parameter file to fill out.  
-
-![alt text](https://github.com/hfoley/EDU/blob/master/images/SynapseLoadDiagram.jpg?raw=true)
 
 
 ## Asset List - These items will be created in your Azure subscription 
