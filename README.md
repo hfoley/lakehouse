@@ -24,12 +24,12 @@ Below are the details of the parameter file to fill out.
 
 ## Asset List - These items will be created in your Azure subscription 
 	1. Azure Resource Group
-	2. Azure SQL Server & Database - metadata tables location 
-	3. Azure Data Lake Gen 2 - location to land extracted parquet files 
-	4. Azure Synapse Workspace - workspace where pipelines and SQL dedicated pool will live
-	5. Azure SQL DB metadata tables to drive Synapse pipelines
-	6. Azure Synapse - SQL Date Based Extract pipeline - extracts data from SQL Server tables specified (example uses Azure SQL DB created or specified) by a date range
-	7. Azure Synapse - SQL Date Not Date Based Extract pipeline - extracts data from SQL Server tables specified (example uses Azure SQL DB created or specified) by a specified value 
+	2. Azure SQL Server & Database - source table to extract data and metadata tables location 
+	3. Azure Data Lake Gen 2 - Synapse Analytics requires an ADLS Gen 2 account for system related usage
+	3. Azure Data Lake Gen 2 - Separate ADLS Gen 2 we'll use as our data lake and extracted parquet files 
+	4. Azure Synapse Workspace - workspace where pipelines and SQL serverless pool, external tables, and views will live
+	5. Azure Synapse - SQL Date Based Extract pipeline - extracts data from SQL Server tables specified (example uses Azure SQL DB created or specified) by a date range
+	6. Azure Synapse - SQL Date Not Date Based Extract pipeline - extracts data from SQL Server tables specified (example uses Azure SQL DB created or specified) by a specified value 
 
 
 * [01 Create Resources](https://github.com/hfoley/SynapseLoadV2/tree/master/01%20Create%20Resources)   - contains PowerShell scripts to build all the Azure components in the solution. 
