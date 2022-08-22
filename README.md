@@ -32,7 +32,8 @@ Below are the details of the parameter file to fill out.
 	6. Azure Synapse - SQL Date Not Date Based Extract pipeline - extracts data from SQL Server tables specified (example uses Azure SQL DB created or specified) by a specified value 
 
 
-* [01 Create Resources](https://github.com/hfoley/SynapseLoadV2/tree/master/01%20Create%20Resources)   - contains PowerShell scripts to build all the Azure components in the solution. 
-* [02 Grant Rights](https://github.com/hfoley/SynapseLoadV2/tree/master/02%20SQL%20Scripts) - contains the SQL Server script to create the metadata tables and insert data in your Azure SQL DB.  
-* [03 Create Pipeline Parts](https://github.com/hfoley/SynapseLoadV2/tree/master/03%20Sample) - contains all the files if you'd like to setup a sample source/destination.  
+* [00 PreReqs](https://github.com/hfoley/lakehouse/tree/main/00%20PreReqs)   - contains files and scripts to help verify pre-reqs
+* [01 Create Resources](https://github.com/hfoley/lakehouse/tree/main/00%20PreReqs)   - contains PowerShell scripts to build all the Azure components in the solution. 
+* [02 Create Pipeline Parts](https://github.com/hfoley/lakehouse/tree/main/02%20Create%20Pipeline%20Parts) - contains all the files to build the pipelines in Synapse workspace
+* [03 Create SQL Parts](https://github.com/hfoley/lakehouse/tree/main/03%20Create%20SQL%20Parts) - contains all the SQL scripts we'll use to build/populate metadata tables
 	
