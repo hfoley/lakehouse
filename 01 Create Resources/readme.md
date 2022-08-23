@@ -26,7 +26,8 @@ Copy the code shown into the clipboard and open new browser tab to the location 
 
 Navigate back to Cloud shell browser window.  You'll get notifications when each creation starts.  You'll see messages like this when the script starts to run.  
 
-image
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/createscript01.jpg?raw=true) 
+
 
 To avoid putting usernames and passwords in any files, you will be prompted for the SQL admin user and password.  You will get 2 prompts as you'll create one for the Azure SQL database and the Synapse Analytics workspace.  
 
