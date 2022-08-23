@@ -22,14 +22,9 @@ Navigate in Azure cloud shell to the lakehouse folder location containing all th
 You'll get this message: 
 *WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code __ to authenticate.
 
-Copy the code shown.  
-Open a new browser tab and navigate to link above.  
-Paste in the code given. Hit next. 
-Sign in with your account granted access to build in Azure. 
-You may be prompted for MFA if enabled. 
-Confirm you are using PowerShell and hit continue. 
-Navigate back to Cloud shell. 
-You'll get notifications when each creation starts.  You'll see messages like this when the script starts to run.  
+Copy the code shown into the clipboard and open new browser tab to the location above.  Paste in the code given and hit next. You will get prompted to sign in.  Use your account granted access to build in Azure and specified in the adminuser in paramfile06.  You may be prompted for MFA if enabled. Confirm you are using PowerShell and hit continue. 
+
+Navigate back to Cloud shell browser window.  You'll get notifications when each creation starts.  You'll see messages like this when the script starts to run.  
 
 image
 
