@@ -32,6 +32,11 @@ We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.
 8. Create a folder called lakehouse. 
 9. Verify doing dir within Azure Cloud Shell that you can now see lakehouse folder.  Navigate to that folder by typing: "cd la*".  If you need to navigate back up you can do that by typing cd..
 
+### Step 3 - Download all the files ###
+All the files we'll use for the workshop are located in this location in the repo.  Download all these files to a location on your machine locally. 
+
+[Full Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
+
 ### Step 3 - Run 00 - LakehousePreReqCheck.ps1 ###
 1. We'll use lakehouse as the folder where we'll upload our scripts.  Upload the 00 - LakehousePreReqCheck.ps1 file into lakehouse folder location. 
 2. Use dir to verify you can see the file in cloud shell.  
@@ -53,6 +58,4 @@ All the PowerShell scripts use this file and it's the only one you need to updat
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
 ### Step 7 - Upload the scripts into Azure CLI location ### 
-It's easier to upload multiple files using the storage location.  Just like we did in Step 2, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  All the files we'll use are located in the location below. 
-
-* [Full Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
+It's easier to upload multiple files using the storage location.  Just like we did in Step 2, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  Upload all the files including your updated paramfile06.json file into the lakehouse folder.  Verify you can see all the files in Azure Cloud Shell environment in lakehouse by doing dir.  
