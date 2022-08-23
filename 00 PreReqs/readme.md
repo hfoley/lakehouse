@@ -47,6 +47,6 @@ Later in the workshop we'll need to run SQL queries against the Azure SQL DB we 
 Later in the workshop we'll setup a Power BI report to our Synapse Analytics Serverless SQL pool.  Install Power BI Desktop - https://powerbi.microsoft.com/en-us/desktop/
 
 ### Step 6 - Update the paramfile06.json parameter file ### 
-All the PowerShell scripts use this file and it's the only one you need to update.  Below is a view that details what you need to fill out and don't.  
+All the PowerShell scripts use this file and it's the only one you need to update.  Below is a view that details what you need to fill out and don't. see 
 
 
