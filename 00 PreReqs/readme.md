@@ -58,4 +58,4 @@ All the PowerShell scripts use this file and it's the only one you need to updat
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
 ### Step 7 - Upload the scripts into Azure CLI location ### 
-It's easier to upload multiple files using the storage location.  Just like we did in Step 2 and 3, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  Upload all the rest of the files including your updated paramfile06.json file into the lakehouse folder.  Verify you can see all the files in Azure Cloud Shell environment in lakehouse by doing dir.  
+It's easier to upload multiple files using the storage location.  Just like we did in Step 2 and 3, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  Upload all the rest of the PowerShell (*.ps1) and json (*.json) files including your updated paramfile06.json file into the lakehouse folder.  Verify you can see all the files in Azure Cloud Shell environment in lakehouse by doing dir.  You do not need to upload any of the SQL scripts (*.sql) or Power BI (*.pbit) files.  
