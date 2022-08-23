@@ -20,7 +20,7 @@ Navigate in Azure cloud shell to the lakehouse folder location containing all th
 `./"01 - CreateLakehouseResources.ps1" -filepath ./paramfile06.json`
 
 You'll get this message: 
-*WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code <code> to authenticate.#
+*WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code __ to authenticate.
 
 Copy the code shown.  
 Open a new browser tab and navigate to link above.  
