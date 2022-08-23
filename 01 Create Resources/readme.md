@@ -33,37 +33,26 @@ To avoid putting usernames and passwords in any files, you will be prompted for 
 
 Login to the Azure portal (https://portal.azure.com/) and verify the items are created in Azure in the resource group specified in your paramfile06. 
 
-The creation script tends to run for about XX minutes. 
-
-
-
-
+The creation script tends to run for about XX minutes in my testing. 
 
 ### Step 3 - Verify and connect to the Azure SQL database ###
-
-Navigate to your Azure SQL Server.  Overview will contain the servername to use for connecting.  Hover over it for an option to copy to clipboard.  
+Navigate to your Azure SQL Server in Azure portal.  Within the Azure portal you'll see an Overview section at the top left pane.  This will contain the servername to use for connecting any tools to your SQL DB.  Hover over it for an option to copy to clipboard.  You'll see separate items for the SQL Server and the SQL database as there are settings at both levels you can set.  
 
 Navigate in the left pane to Networking under the Security section.  Review the options and that your client IP address is allowed.  
 
 Open the SQL client tool.  Create a server connection with the info in clipboard.  
 
 ### Step 4 - Verify and connect to the Synapse Analytics workspace  ###
-
-Do the same for your Synapse workspace in the Azure portal. You can remove some of the approved IPs if different from yours.  They are created from the cloud shell environment and needs separate IP allowed for connectivity.  
+Do the same process for your Synapse Analytics workspace in the Azure portal. You can remove some of the approved IPs if different from yours.  They are created from the cloud shell environment and needs separate IP allowed for connectivity.  
 
 Verify you can connect into the Azure Syanpse Analytics Studio. 
 
 ### Step 5 - Run script to grant privledges to data lake  ###
+Navigate in Azure cloud shell to the lakehouse folder location containing all the PowerShell script files.  Run the command below:  
 
-![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/CloudShell02.jpg?raw=true)
+`./"02 - LakehouseGrantRights.ps1" -filepath ./paramfile06.json`
 
-5. Type the command:  dir and hit enter.  you should see at least one folder called clouddrive.  
-6. Navigate to it by typing the command:  cd cl*  
-7. Let's navigate to the fileshare via the Azure portal or Azure Storage Explorer.  We'll create a folder within the fileshare listed in #4.  You'll see a folder called ".cloudconsole" already for system use.  
-8. Create a folder called lakehouse. 
-9. Verify doing dir within Azure Cloud Shell that you can now see lakehouse folder.  Navigate to that folder by typing: "cd la*".  If you need to navigate back up you can do that by typing cd..
-
-
+You'll need to login like before.  This script will grant the Synapse managed service identity access to the storage account we will use for our data lake the level of storage blob contributor.  It also will grant this access to the admin user in the paramfile06.  This right is required to view the data lake through Synapse studio even if there's inherited rights.  
 
 You're now ready to move to 01 Create Resources module.  Go there and we'll begin to build everything in Azure.  
-[01 Create Resources](https://github.com/hfoley/lakehouse/tree/main/01%20Create%20Resources) 
+[03 Create SQL Parts](https://github.com/hfoley/lakehouse/tree/main/03%20Create%20SQL%20Parts) 
