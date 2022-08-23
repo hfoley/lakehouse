@@ -2,29 +2,61 @@
 We are now ready to run the PowerShell scripts to build things out in Azure.  Here's an overview of what we'll do in this module.  
 		
 	1. Verify paramfile06.json in Azure 
-	2. Run command to create 
-	3. Run pre-req file 00 - LakehousePreReqCheck.ps1 to check/install modules.  
-	4. Client tool to connect and run queries against an Azure SQL database (i.e Azure Data Studio / SSMS)
- 	5. Power BI Desktop 
-	6. Update the paramfile06.json file with the values you want items to be in Azure
-	7. Upload the scripts you intend to run into the lakehouse folder we created in Azure Cloud Shell environment/storage fileshare 
-	8. Optional - Azure Storage Explorer 
-  
+	2. Run script to create resources
+	3. Verify and connect to the Azure SQL database
+ 	4. Verify and connect to the Synapse Analytics workspace 
+    5. Run script to grant privledges to data lake
 
 
 
 ### Step 1 - Verify paramfile06.json ###
-Type the following command to view the contents of yoru paramfile06.json file has been updated.  
+Type the following command to view the contents of yoru paramfile06.json file has been updated in Azure Cloud Shell environment.  Validate the values are as you want them.    
 
 `get-content paramfile06.json`
 
-### Step 2 - Setup Azure Cloud Shell environment ###
-We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.  Below are the steps to set this up.  You will need an Azure storage account.  
+### Step 2 - Run script to create resources ###
+Navigate in Azure cloud shell to the lakehouse folder location containing all the PowerShell script files.  Run the command below:  
 
-1. Navigate to and login to the Azure portal (azure.portal.com).  Start Azure Cloud Shell by clicking the  >_ icon in top right.  
-2. You will be prompted for Bash or PowerShell if you've never set it up before.  Choose PowerShell. 
-3. You will be prompted to create or connect to existing storage account and fileshare.  You can more details on storage needs at  https://docs.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage.  
-4. You will then see the Azure Cloud Shell prompt.  You can verify your storage account info by typing get-clouddrive in prompt and hit enter.  
+./"01 - CreateLakehouseResources.ps1" -filepath ./paramfile06.json
+
+You'll get this message: 
+    WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code <code> to authenticate.
+Copy the code shown.  
+Open a new browser tab and navigate to link above.  
+Paste in the code given. Hit next. 
+Sign in with your account granted access to build in Azure. 
+You may be prompted for MFA if enabled. 
+Confirm you are using PowerShell and hit continue. 
+Navigate back to Cloud shell. 
+You'll get notifications when each creation starts.  You'll see messages like this when the script starts to run.  
+
+image
+
+To avoid putting usernames and passwords in any files, you will be prompted for the SQL admin user and password.  You will get 2 prompts as you'll create one for the Azure SQL database and the Synapse Analytics workspace.  
+
+Login to the Azure portal (https://portal.azure.com/) and verify the items are created in Azure in the resource group specified in your paramfile06. 
+
+The creation script tends to run for about XX minutes. 
+
+Navigate to your Azure SQL Server.  Overview will contain the servername to use for connecting.  Hover over it for an option to copy to clipboard.  
+
+Navigate in the left pane to Networking under the Security section.  Review the options and that your client IP address is allowed.  
+
+Open the SQL client tool.  Create a server connection with the info in clipboard.  
+
+Do the same for your Synapse workspace in the Azure portal. You can remove some of the approved IPs if different from yours.  They are created from the cloud shell environment and needs separate IP allowed for connectivity.  
+
+Verify you can connect into the Azure Syanpse Analytics Studio. 
+
+Now ready to move to next module.  
+
+
+
+### Step 3 - Verify and connect to the Azure SQL database ###
+
+### Step 4 - Verify and connect to the Synapse Analytics workspace  ###
+
+### Step 5 - Run script to grant privledges to data lake  ###
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/CloudShell02.jpg?raw=true)
 
