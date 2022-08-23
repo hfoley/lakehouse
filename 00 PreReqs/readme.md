@@ -6,7 +6,7 @@ Below is a list of required items needed to be able to run through the workshop 
 	3. Run pre-req file 00 - LakehousePreReqCheck.ps1 to check/install modules.  
 	4. Client tool to connect and run queries against an Azure SQL database (i.e Azure Data Studio / SSMS)
  	5. Power BI Desktop 
-	6. Update the 
+	6. Update the paramfile06.json file with the values you want items to be in Azure
 	7. Optional - Azure Storage Explorer 
   
 
