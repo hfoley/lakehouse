@@ -47,6 +47,6 @@ Later in the workshop we'll need to run SQL queries against the Azure SQL DB we 
 Later in the workshop we'll setup a Power BI report to our Synapse Analytics Serverless SQL pool.  Install Power BI Desktop - https://powerbi.microsoft.com/en-us/desktop/
 
 ### Step 6 - Update the paramfile06.json parameter file ### 
-All the PowerShell scripts use this file and it's the only one you need to update.  Below is a view that details what you need to fill out and don't. 
+All the PowerShell scripts use this file and it's the only one you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values relevant to the Azure subscription we'll install items.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
 
 
