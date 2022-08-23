@@ -53,4 +53,6 @@ All the PowerShell scripts use this file and it's the only one you need to updat
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
 ### Step 7 - Upload the scripts into Azure CLI location ### 
-It's easier to upload multiple files using the storage location.  
+It's easier to upload multiple files using the storage location.  Just like we did in Step 2, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  All the files we'll use are located in the location below. 
+
+* [Full Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
