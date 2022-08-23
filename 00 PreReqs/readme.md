@@ -22,7 +22,7 @@ We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.
 	3. You will be prompted to create or connect to existing storage account and fileshare.  You can more details on storage needs at  https://docs.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage.  
 	4. You will then see the Azure Cloud Shell prompt.  You can verify your storage account info by typing get-clouddrive
 
-	code(get-clouddrive)
+`code(get-clouddrive)`
 
 	![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Data%20Lakehouse01.jpg?raw=true)
 
