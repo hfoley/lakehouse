@@ -23,7 +23,8 @@ The workshop is broken into the modules below.  Complete 00 PreReqs prior to the
 * [03 Create SQL Parts](https://github.com/hfoley/lakehouse/tree/main/03%20Create%20SQL%20Parts) - contains all the SQL scripts we'll use to build/populate metadata tables
 
 ## Asset List - These items will be created in your Azure subscription 
-At the completion of this workshop you'll build these assets in Azure.    
+At the completion of this workshop you'll build these assets in Azure.  
+  
 	1. Azure Resource Group
 	2. Azure SQL Server & Database - source table to extract data and metadata tables location 
 	3. Azure Data Lake Gen 2 - Synapse Analytics requires an ADLS Gen 2 account for system related usage
