@@ -6,7 +6,8 @@ Below is a list of required items needed to be able to run through the workshop 
 	3. Run pre-req file 00 - LakehousePreReqCheck.ps1 to check/install modules.  
 	4. Client tool to connect and run queries against an Azure SQL database (i.e Azure Data Studio / SSMS)
  	5. Power BI Desktop 
-	6. Optional - Azure Storage Explorer 
+	6. Update the 
+	7. Optional - Azure Storage Explorer 
   
 
 
@@ -44,3 +45,8 @@ Later in the workshop we'll need to run SQL queries against the Azure SQL DB we 
 
 ### Step 5 - Power BI Desktop ###
 Later in the workshop we'll setup a Power BI report to our Synapse Analytics Serverless SQL pool.  Install Power BI Desktop - https://powerbi.microsoft.com/en-us/desktop/
+
+### Step 6 - Update the paramfile06.json parameter file ### 
+All the PowerShell scripts use this file and it's the only one you need to update.  Below is a view that details what you need to fill out and don't.  
+
+
