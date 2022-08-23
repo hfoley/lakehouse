@@ -7,7 +7,8 @@ Below is a list of required items needed to be able to run through the workshop 
 	4. Client tool to connect and run queries against an Azure SQL database (i.e Azure Data Studio / SSMS)
  	5. Power BI Desktop 
 	6. Update the paramfile06.json file with the values you want items to be in Azure
-	7. Optional - Azure Storage Explorer 
+	7. Upload the scripts you intend to run into the lakehouse folder we created in Azure Cloud Shell environment/storage fileshare 
+	8. Optional - Azure Storage Explorer 
   
 
 
@@ -51,4 +52,5 @@ All the PowerShell scripts use this file and it's the only one you need to updat
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
-
+### Step 7 - Upload the scripts into Azure CLI location ### 
+It's easier to upload multiple files using the storage location.  
