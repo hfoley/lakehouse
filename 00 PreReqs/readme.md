@@ -34,11 +34,11 @@ We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.
 12. You can now run the powershell script by typing: ./"00 - LakehousePreReqCheck.ps1" and hit enter. 
 13. This will check for cmdlets and resource providers need to move forward.  Any missing will error and display syntax to install. 
 
-	
-The architecture of the solution built in this workshop is diagrammed below.  
-
-
-
-![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Data%20Lakehouse02.jpg?raw=true)
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/CloudShell03.jpg?raw=true)
 		
+	
+
+
+
+
 
