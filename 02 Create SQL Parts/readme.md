@@ -3,7 +3,6 @@ In this section we build out the things we'll need inside the Azure SQL database
 		
 	1. Build the sample table we'll use as a source in Azure SQL db
 	2. Build the metadata tables that will drive our extract pipelines
-	3. 
 
 
 ### Step 1 - Build our sample source table ###
@@ -27,4 +26,5 @@ Open the query below connected to the Azure SQL database.
 You will need to update the insert statement based on your paramfile06 value for azsqldb.  You may want to step through and run segments of the code. There are comments noting good stoping points.  
 
 You're now ready to move to 03 Build Pipelines module.  Go there and we'll begin to build our pipelines in Synapse Analytics workspace.  
+
 [03 Build Pipelines](https://github.com/hfoley/lakehouse/tree/main/03%20Build%20Pipelines) 
