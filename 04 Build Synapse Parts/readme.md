@@ -10,42 +10,43 @@ In this section we build out the last mile of our lakehouse architecture inside 
 ***update down from here 
 
 ### Step 1 - Import the scripts ###
-Navigate to your Synpase studio and login.  Within the far left pane choose Develop (paper icon).  Choose the ... to the right of SQL Scripts. 
+Navigate within your Synpase studio and login.  In the far left pane choose Develop (paper icon).  Choose the + at the top of the middle pane.  Choose the Import option.  
 
-Choose import.  
+Navigate to the 01 - Cow External Table.sql script you have saved locally. 
 
-Navigate to the 01 - Query Cow Parquet.sql script.   
+Update the script with the values for your environment.  Hit cntrl-h to get to the replace to help with that.  You'll want to replace <azstoragename2> with the value you have in paramfile06 file for that variable.  Update with your value from paramfile06 file.
 
-Run and explore the parquet files directly.  
 
 ### Step 2 - Run script to create external table ###
-Import the X script. 
+Step thru and run the code.  This builds a database, schema, external file format, external data source, and external table.  
 
-Run the script to create the external table. 
-
-View how to see it directly in serverless. 
+Navigate to Data in the left pane.  Select Workspace and expand SQL database.  You should now see Biometrics database now. If you don't do a refresh (top right).  Verify you see the same things as before.  
 
 ### Step 3 - Run script to create view ###
 We'll build a view on top of the external table to further narrow down the scope of what we'll consume with Power BI.  
 
-Import the X script.  
+Import the 02 - Create PBI View script.  
 
 Run the script.  
 
-Verify you can see a view. 
+Verify you can see a view. It won't return data yet.  
 
 ### Step 3 - Capture Serverless SQL endpoint ###
-We'll now get our connection information to connect any SQL tool to the Serverless endpoint.  
+We'll now get our connection information to connect any SQL tool to the SQL endpoint.  
 
 Navigate in Azure portal to Synapse.  
 
-Navigate to overview pane.  You'll see 3 endpoints.  Copy the serverless SQL one. 
+Navigate to overview pane.  You'll see 3 endpoints.  Copy the Serverless SQL endpoint one. 
 
 ### Step 4 - Connect Power BI to Synapse ###
 We are now going to connect Power BI template file to the serverless SQL endpoint. 
 
 Open pbit file.  Paste into the parameter the serverless sql endpoint in your clipboard. You'll need to authenticate.  
 
-Delete one of the parquet files from ADLS and hit refresh.  Verify your view updated with different results. 
+When you get connected to the data it doesn't show anything.  That's intentional.  We built our view to look at the last 2 months of data.  There isn't any so we'll create some.  Open a SQL client connection to our source Azure SQL database.  Open the query CowBiometricsSampleInsert.sql.  This will insert new records on a whole new cow.  
 
-All done! insert applause/whoops 
+Navigate back in Synapse studio to our SQL Not Date Based Pipeline.  Run the pipeline again but use Animal 7777.  
+
+Now we'll refresh our Power BI report.  Hit the refresh button.  You should see records on our new cow land just because a parquet file landed in the data lake.  
+
+All done! insert applause/whoops/tears of joy 
