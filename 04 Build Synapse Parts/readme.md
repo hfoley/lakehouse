@@ -9,35 +9,43 @@ In this section we build out the last mile of our lakehouse architecture inside 
     
 ***update down from here 
 
-### Step 1 - Verify paramfile06.json ###
-Type the following command to view the contents of yoru paramfile06.json file has been updated in Azure Cloud Shell environment.  Validate the values are as you want them.    
+### Step 1 - Import the scripts ###
+Navigate to your Synpase studio and login.  Within the far left pane choose Develop (paper icon).  Choose the ... to the right of SQL Scripts. 
 
-`get-content paramfile06.json`
+Choose import.  
 
-### Step 2 - Run script to create resources ###
-Navigate in Azure cloud shell to the lakehouse folder location containing all the PowerShell script files.  Run the command below:  
+Navigate to the 01 - Query Cow Parquet.sql script.   
 
-`./"01 - CreateLakehouseResources.ps1" -filepath ./paramfile06.json`
+Run and explore the parquet files directly.  
 
-You'll get this message: 
-*WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code __ to authenticate.
+### Step 2 - Run script to create external table ###
+Import the X script. 
 
-Copy the code shown into the clipboard and open new browser tab to the location above.  Paste in the code given and hit next. You will get prompted to sign in.  Use your account granted access to build in Azure and specified in the adminuser in paramfile06.  You may be prompted for MFA if enabled. Confirm you are using PowerShell and hit continue. 
+Run the script to create the external table. 
 
-Navigate back to Cloud shell browser window.  You'll get notifications when each creation starts.  You'll see messages like this when the script starts to run.  
+View how to see it directly in serverless. 
 
-![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/createscript01.jpg?raw=true) 
+### Step 3 - Run script to create view ###
+We'll build a view on top of the external table to further narrow down the scope of what we'll consume with Power BI.  
 
+Import the X script.  
 
-To avoid putting usernames and passwords in any files, you will be prompted for the SQL admin user and password.  You will get 2 prompts as you'll create one for the Azure SQL database and the Synapse Analytics workspace.  
+Run the script.  
 
-Login to the Azure portal (https://portal.azure.com/) and verify the items are created in Azure in the resource group specified in your paramfile06. 
+Verify you can see a view. 
 
-The creation script tends to run for about XX minutes in my testing. 
+### Step 3 - Capture Serverless SQL endpoint ###
+We'll now get our connection information to connect any SQL tool to the Serverless endpoint.  
 
-### Step 3 - Verify and connect to the Azure SQL database ###
-Navigate to your Azure SQL Server in Azure portal.  Within the Azure portal you'll see an Overview section at the top left pane.  This will contain the servername to use for connecting any tools to your SQL DB.  Hover over it for an option to copy to clipboard.  You'll see separate items for the SQL Server and the SQL database as there are settings at both levels you can set.  
+Navigate in Azure portal to Synapse.  
 
-Navigate in the left pane to Networking under the Security section.  Review the options and that your client IP address is allowed.  
+Navigate to overview pane.  You'll see 3 endpoints.  Copy the serverless SQL one. 
 
+### Step 4 - Connect Power BI to Synapse ###
+We are now going to connect Power BI template file to the serverless SQL endpoint. 
 
+Open pbit file.  Paste into the parameter the serverless sql endpoint in your clipboard. You'll need to authenticate.  
+
+Delete one of the parquet files from ADLS and hit refresh.  Verify your view updated with different results. 
+
+All done! insert applause/whoops 
