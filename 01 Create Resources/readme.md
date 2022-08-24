@@ -55,4 +55,4 @@ Navigate in Azure cloud shell to the lakehouse folder location containing all th
 You'll need to login like before.  This script will grant the Synapse managed service identity access to the storage account we will use for our data lake the level of storage blob contributor.  It also will grant this access to the admin user in the paramfile06.  This right is required to view the data lake through Synapse studio even if there's inherited rights.  
 
 You're now ready to move to 01 Create Resources module.  Go there and we'll begin to build everything in Azure.  
-[03 Create SQL Parts](https://github.com/hfoley/lakehouse/tree/main/03%20Create%20SQL%20Parts) 
+[03 Create SQL Parts](https://github.com/hfoley/lakehouse/tree/main/02%20Create%20SQL%20Parts) 
