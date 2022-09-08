@@ -38,12 +38,12 @@ All the files we'll use for the workshop are located in this location in this re
 [Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
 
 ### Step 4 - Update the paramfile06.json parameter file ### 
-Navigate to the local location where you downloaded the files and navigate to the /scripts folder.  All the PowerShell scripts use the paramfile06.json file for the details it needs and it's the only file you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values you want for the names of the Azure resources.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
+Navigate to the local location where you downloaded the files and navigate to the /scripts/posh folder.  You should see a file called paramfile06.json.  Open it within editor of choice.  All the PowerShell scripts use this file for the details it needs and it's the only file you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values you want for the names of the Azure resources.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
 ### Step 5 - Upload files to storage and Run 00 - LakehousePreReqCheck.ps1 ###
-1. We'll use the lakehouse folder we created as the location upload our files we need.  Upload all the files within /scripts into lakehouse folder within storage.  You can use Azure Storage Explorer tool or navigating to the storage location in the Azure Portal and using the storage browser upload capability. 
+1. We'll use the lakehouse folder we created as the location upload our files we need.  Upload all the files within /scripts/posh into lakehouse folder within storage.  You can use Azure Storage Explorer tool or navigating to the storage location in the Azure Portal and using the storage browser upload capability. 
 2. After the files have been uploaded use dir command to verify you can see the files now within cloud shell.  
 3. You can now run the powershell script by typing: ./"00 - LakehousePreReqCheck.ps1" and hit enter. 
 4. This will check for cmdlets and resource providers need to move forward.  Any missing will error and display syntax to install. 
