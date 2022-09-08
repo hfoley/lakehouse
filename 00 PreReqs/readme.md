@@ -28,12 +28,12 @@ We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.
 
 5. Type the command:  dir and hit enter.  you should see at least one folder called clouddrive.  
 6. Navigate to it by typing the command:  cd cl*  
-7. Let's navigate to the fileshare via the Azure portal or Azure Storage Explorer.  We'll create a folder within the fileshare listed in #4.  You'll see a folder called ".cloudconsole" already for system use.  
+7. Let's navigate to the fileshare via the Azure portal or Azure Storage Explorer.  We'll create a folder within the fileshare listed in #4.  You'll see a folder called ".cloudconsole" already that is for system use.  
 8. Create a folder called lakehouse. 
 9. Verify doing dir within Azure Cloud Shell that you can now see lakehouse folder.  Navigate to that folder by typing: "cd la*".  If you need to navigate back up you can do that by typing cd..
 
 ### Step 3 - Download all the files ###
-All the files we'll use for the workshop are located in this location in the repo.  Download all these files to a location on your machine locally. 
+All the files we'll use for the workshop are located in this location in this repository.  You'll need to navigate back up to the lakehouse level in order to download the zip file due to how github works.  Download the zip file to a location on your machine locally.  You can delete all the files and folder except those in scripts in you'd like.  
 
 [Full Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
 
