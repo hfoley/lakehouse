@@ -1,5 +1,5 @@
 # Building Lakehouse with Azure Synapse Analytics
-In this workshop we'll show how we can setup a full data lake house architecture, from soup to nuts.  We'll build out the components in Azure using PowerShell automated scripts, including metadata driven pipelines to saturate your data lake.  We'll also build out tables and views and connect Power BI to them.  
+In this workshop we'll show how we can setup a full data lake house architecture.  We'll build out the components in Azure using PowerShell automated scripts, including metadata driven pipelines to saturate your data lake.  We'll also build out external tables and views and connect Power BI to them.  
 		
 	1. Build components in Azure with PowerShell scripts 
 	2. Build and run metadata driven pipeline to build data lake
