@@ -35,11 +35,16 @@ We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.
 ### Step 3 - Download all the files ###
 All the files we'll use for the workshop are located in this location in this repository.  You'll need to navigate back up to the lakehouse level in order to download the zip file due to how github works.  Download the zip file to a location on your machine locally.  You can delete all the files and folder except those in scripts in you'd like.  
 
-[Full Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
+[Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
 
-### Step 3 - Run 00 - LakehousePreReqCheck.ps1 ###
-1. We'll use lakehouse as the folder where we'll upload our scripts.  Upload the 00 - LakehousePreReqCheck.ps1 file into lakehouse folder location. 
-2. Use dir to verify you can see the file in cloud shell.  
+### Step 4 - Update the paramfile06.json parameter file ### 
+Navigate to the local location where you downloaded the files and navigate to the /scripts folder.  All the PowerShell scripts use the paramfile06.json file for the details it needs and it's the only file you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values you want for the names of the Azure resources.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
+
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
+
+### Step 5 - Upload files to storage and Run 00 - LakehousePreReqCheck.ps1 ###
+1. We'll use the lakehouse folder we created as the location upload our files we need.  Upload all the files within /scripts into lakehouse folder within storage.  You can use Azure Storage Explorer tool or navigating to the storage location in the Azure Portal and using the storage browser upload capability. 
+2. After the files have been uploaded use dir command to verify you can see the files now within cloud shell.  
 3. You can now run the powershell script by typing: ./"00 - LakehousePreReqCheck.ps1" and hit enter. 
 4. This will check for cmdlets and resource providers need to move forward.  Any missing will error and display syntax to install. 
 
@@ -52,10 +57,7 @@ Later in the workshop we'll need to run SQL queries against the Azure SQL DB we 
 ### Step 5 - Power BI Desktop ###
 Later in the workshop we'll setup a Power BI report to our Synapse Analytics Serverless SQL pool.  Install Power BI Desktop - https://powerbi.microsoft.com/en-us/desktop/
 
-### Step 6 - Update the paramfile06.json parameter file ### 
-All the PowerShell scripts use this file and it's the only one you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values relevant to the Azure subscription we'll install items.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
 
-![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
 ### Step 7 - Upload the scripts into Azure CLI location ### 
 It's easier to upload multiple files using the storage location.  Just like we did in Step 2 and 3, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  Upload all the rest of the PowerShell (*.ps1) and json (*.json) files including your updated paramfile06.json file into the lakehouse folder.  Verify you can see all the files in Azure Cloud Shell environment in lakehouse by doing dir.  You do not need to upload any of the SQL scripts (*.sql) or Power BI (*.pbit) files.  
