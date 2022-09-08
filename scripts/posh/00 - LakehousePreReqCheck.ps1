@@ -1,7 +1,7 @@
 <# Adjust based on what you're doing. (i.e may not need Purview) 
 #>
 Write-Host "Azure cmdlet checking..."
-$modules = ("Az.Storage","Az.Synapse","Az.KeyVault")
+$modules = ("Az.Storage","Az.Synapse")
 $modulecheck = 
 foreach ($module in $modules)
         {
@@ -17,7 +17,7 @@ foreach ($module in $modules)
 $modulecheck | format-table
 
 Write-Host "Resource provider checking..."
-$providers = ("Microsoft.Storage")
+$providers = ("Microsoft.Storage","Microsoft.Synapse")
 $providercheck = 
 foreach ($provider in $providers)
         {

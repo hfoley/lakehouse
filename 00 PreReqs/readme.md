@@ -42,27 +42,23 @@ Navigate to the local location where you downloaded the files and navigate to th
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/scripts01.jpg?raw=true)
+
 ### Step 5 - Upload files to storage and Run 00 - LakehousePreReqCheck.ps1 ###
 1. We'll use the lakehouse folder we created as the location upload our files we need.  Upload all the files within /scripts/posh into lakehouse folder within storage.  You can use Azure Storage Explorer tool or navigating to the storage location in the Azure Portal and using the storage browser upload capability. 
 2. After the files have been uploaded use dir command to verify you can see the files now within cloud shell.  
 3. You can now run the powershell script by typing: ./"00 - LakehousePreReqCheck.ps1" and hit enter. 
-4. This will check for cmdlets and resource providers need to move forward.  Any missing will error and display syntax to install. 
+4. This will check for cmdlets and resource providers needed to move forward.  Anythat are missing will error and display the syntax to install. 
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/CloudShell03.jpg?raw=true)
 		
 	
-### Step 4 - Client tool for SQL queries ###
-Later in the workshop we'll need to run SQL queries against the Azure SQL DB we create.  If you don't have one you can use Azure Data Studio or SQL Server Management Studio. https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16
+### Step 6 - Client tool for SQL queries ###
+Later in the workshop we'll need to run SQL queries against the Azure SQL DB we create.  If you don't have a client installed yet, you can use Azure Data Studio or SQL Server Management Studio. https://docs.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16
 
-### Step 5 - Power BI Desktop ###
+### Step 7 - Power BI Desktop ###
 Later in the workshop we'll setup a Power BI report to our Synapse Analytics Serverless SQL pool.  Install Power BI Desktop - https://powerbi.microsoft.com/en-us/desktop/
 
-
-
-### Step 7 - Upload the scripts into Azure CLI location ### 
-It's easier to upload multiple files using the storage location.  Just like we did in Step 2 and 3, you can navigate to the lakehouse folder in the browser using storage browser or Azure Storage Explorer.  Upload all the rest of the PowerShell (*.ps1) and json (*.json) files including your updated paramfile06.json file into the lakehouse folder.  Verify you can see all the files in Azure Cloud Shell environment in lakehouse by doing dir.  You do not need to upload any of the SQL scripts (*.sql) or Power BI (*.pbit) files.  
-
-![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/scripts01.jpg?raw=true)
 
 You're now ready to move to 01 Create Resources module.  Go there and we'll begin to build everything in Azure.  
 [01 Create Resources](https://github.com/hfoley/lakehouse/tree/main/01%20Create%20Resources) 
