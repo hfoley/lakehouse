@@ -3,7 +3,7 @@ In this workshop we'll show how we can setup a full data lake house architecture
 		
 	1. Build components in Azure with PowerShell scripts 
 	2. Build and run metadata driven pipeline to build data lake
-	3. Build table/view in Synapse Analytics with serverless SQL pool 
+	3. Build external table/view in Synapse Analytics with serverless SQL pool 
     4. Connect to table with Power BI  
 
 
