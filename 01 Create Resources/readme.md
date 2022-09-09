@@ -1,7 +1,7 @@
 # Building out resources in Azure
 We are now ready to run the PowerShell scripts to build things out in Azure.  Here's an overview of what we'll do in this module.  
 		
-	1. Verify paramfile06.json in Azure 
+	1. Verify paramfile06.json 
 	2. Run script to create resources
 	3. Verify and connect to the Azure SQL database
  	4. Verify and connect to the Synapse Analytics workspace 
@@ -10,12 +10,12 @@ We are now ready to run the PowerShell scripts to build things out in Azure.  He
 
 
 ### Step 1 - Verify paramfile06.json ###
-Type the following command to view the contents of yoru paramfile06.json file has been updated in Azure Cloud Shell environment.  Validate the values are as you want them.    
+Make sure you are in your lakehouse folder within the Azure cloud shell environment.  Type the following command to view the contents of your paramfile06.json file in Azure Cloud Shell environment.  Validate the values are as you want them one last time.  
 
 `get-content paramfile06.json`
 
 ### Step 2 - Run script to create resources ###
-Navigate in Azure cloud shell to the lakehouse folder location containing all the PowerShell script files.  Run the command below:  
+Run the command below:  
 
 `./"01 - CreateLakehouseResources.ps1" -filepath ./paramfile06.json`
 
