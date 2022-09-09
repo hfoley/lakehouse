@@ -112,6 +112,8 @@ $endTime = Get-Date
 write-host "Ended SQL Server and DB creation at " $endTime
 
 New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroupName  -ServerName $azsqlserver -AllowAllAzureIPs 
+New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroupName  -ServerName $azsqlserver -FirewallRuleName $firewallrulename -StartIpAddress $clientip -EndIpAddress $clientip
+
 
 $startTime = Get-Date
 
