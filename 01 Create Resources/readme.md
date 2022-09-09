@@ -38,12 +38,10 @@ The creation script tends to run for about 12 minutes in my testing.
 ### Step 3 - Verify and connect to the Azure SQL database ###
 Navigate to your Azure SQL Server in the Azure portal.  Within the Azure portal you'll see an Overview section (left pane).  This will contain the servername to use for connecting any tools to your SQL DB.  Hover over it for an option to copy to clipboard.  You'll see separate items for the SQL Server and the SQL database as there are settings at both levels you can set.  
 
-Navigate in the left pane to Networking under the Security section.  Hit the + button to add your client IP address to allow us to connect from your client machine.  
-
 Open the SQL client tool.  Supply the servername for the Azure SQL Server (<azsqlserver>.database.windows.net) we copied from the clipboard.  You'll want to change the authentication to SQL Server Authentication and supply the user/password you set during the running of the script.  You should see our SQL database listed (azsqlDB value from paramfile06.json).  
 
 ### Step 4 - Verify and connect to the Synapse Analytics workspace  ###
-Do the same process for your Synapse Analytics workspace in the Azure portal. You can remove some of the approved IPs if different from yours.  They are created from the cloud shell environment and needs separate IP allowed for connectivity.  
+Navigate to your Synapse workspace within the Azure portal. You'll see a link in getting started section (or workspace web URL).  Click to open Synapse Studio and login.  
 
 Verify you can connect into the Azure Syanpse Analytics Studio. 
 
@@ -54,5 +52,5 @@ Navigate in Azure cloud shell to the lakehouse folder location containing all th
 
 You'll need to login like before.  This script will grant the Synapse managed service identity access to the storage account we will use for our data lake the level of storage blob contributor.  It also will grant this access to the admin user in the paramfile06.  This right is required to view the data lake through Synapse studio even if there's inherited rights.  
 
-You're now ready to move to 01 Create Resources module.  Go there and we'll begin to build everything in Azure.  
+You're now ready to move to 02 Create SQL Parts module.  Go there and we'll begin to build our components in the Azure SQL database.  
 [02 Create SQL Parts](https://github.com/hfoley/lakehouse/tree/main/02%20Create%20SQL%20Parts) 
