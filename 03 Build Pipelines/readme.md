@@ -29,15 +29,15 @@ Navigate back to Cloud shell browser window.  You'll get notifications when each
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/createpipeline.jpg?raw=true) 
 
 ### Step 2 - Verify pieces and update linked server ###
-Navigate to your Synpase studio and login.  Within the far left pane choose manage (toolbox icon).  Choose linked services.  Verify we have 2 linked services.  
+Navigate to your Synpase studio and login.  Within the far left pane choose manage (toolbox icon).  Choose linked services.  Verify we have 4 linked services.  You'll have 2 new ones built during the script we just run.    
 
-Select the AzureSQLDBLS linked service for Azure SQL DB.  Start the interactive authoring in the Integration runtime section.  You click on the pencil next to the integration runtime. 
+Select the AzureSQLDBLS linked service for Azure SQL DB.  Start the interactive authoring in the Integration runtime section.  You click on the pencil next to the integration runtime, select Virtual network, select enable, and click Apply button. The enabling will take a few minutes to complete.  You'll get an enabled message when it's complete.  
 
-Update the linked service user name from "***changethis***" to the user and password with what we set for the SQL admin account earlier.  Test connectivity and verify successful connection. --may need to update allow azure services on the SQL DB.  I'll update this piece later after determine if code or want to update manually for a point. 
+Update the linked service user name from "***changethis***" to the user and password with what we set for the SQL admin account earlier.  Test connectivity and verify successful connection is established.  Click apply to publish the changes we just made to the linked server.  
 
 
 ### Step 3 - Run the pipeline ###
-Navigate to the Integrate pane (pipe icon) and expand Pipelines. 
+Navigate to the Integrate pane (pipe icon in far left pane) and expand Pipelines. 
 
 Select the SQL Date Based Extract PL. 
 
@@ -56,9 +56,9 @@ Right click on the parquet file.  Select New SQL script and select top 100 rows.
 
 Run the query as is and view the results.  
 
-Update the select statement to do DISTINCT(Animal) so we see which animals were extracted.  Keep this query as it and we'll come back to later. 
+Update the select statement from "TOP 100 *" to DISTINCT(Animal) so we see which animals were extracted.  Keep this query as it and we'll come back to later. 
 
-image
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/createpipeline.jpg?raw=true) 
 
 ### Step 5 - Run extract on one cow ###
 Navigate back to our pipelines.  Select SQL Not Date Based Extract PL.  This pipeline is a pattern that uses parameters to drive the extract.  

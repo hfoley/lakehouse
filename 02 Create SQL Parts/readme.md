@@ -6,13 +6,13 @@ In this section we build out the things we'll need inside the Azure SQL database
 
 
 ### Step 1 - Build our sample source table ###
-For this workshop our sample source will be the COW.Biometrics table that we'll build using the script below.  
+For this workshop our sample source table will be COW.Biometrics.  We'll build this using the script contained in the /scripts/sql that you downloaded locally.  
 
 Navigate to your Azure SQL Server in Azure portal. Within the Azure portal you'll see an Overview section at the top left pane. This will contain the servername to use for connecting any tools to your SQL DB. Hover over it for an option to copy to clipboard. 
 
-Open the SQL client tool. Create a server connection with the info in clipboard.
+Open the SQL client tool of your choice. Create a server connection with the info in clipboard.
 
-Connect to the Azure SQL database we created before and open the SQL query below and run.  Make sure to change your context to the database we created instead of master.  
+Connect to the Azure SQL database we created before and open the SQL script below.  Make sure to change your context to the database we created instead of master.  
 
 `CowBiometricsSampleSource.sql`
 
