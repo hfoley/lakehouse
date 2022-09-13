@@ -8,7 +8,7 @@ Below is a list of required items needed to be able to run through the workshop 
  	5. Power BI Desktop 
 	6. Update the paramfile06.json file with the values you want items to be in Azure
 	7. Upload the scripts you intend to run into the lakehouse folder we created in Azure Cloud Shell environment/storage fileshare 
-	8. Optional - Azure Storage Explorer 
+	8. Optional - Azure Storage Explorer
   
 
 
