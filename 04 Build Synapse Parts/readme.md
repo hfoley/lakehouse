@@ -7,7 +7,7 @@ In this section we build out the last mile of our lakehouse architecture inside 
     4. Connect the Power BI template to Synapse Serverless SQL  
 
     
-***update down from here 
+**update down from here 
 
 ### Step 1 - Import the scripts ###
 Navigate within your Synpase studio and login.  In the far left pane choose Develop (paper icon).  Choose the + at the top of the middle pane.  Choose the Import option.  
