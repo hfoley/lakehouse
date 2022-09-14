@@ -11,7 +11,7 @@ In this section we build out the last mile of our lakehouse architecture inside 
 
 ### Step 1 - Import the scripts ###
 Navigate within your Synpase studio and login.  In the far left pane choose Develop (paper icon).  Choose the + at the top of the middle pane.  Choose the Import option.  
-
+ftes
 Navigate to the 01 - Cow External Table.sql script you have saved locally. 
 
 Update the script with the values for your environment.  Hit cntrl-h to get to the replace to help with that.  You'll want to replace <azstoragename2> with the value you have in paramfile06 file for that variable.  Update with your value from paramfile06 file.
@@ -27,7 +27,7 @@ We'll build a view on top of the external table to further narrow down the scope
 
 Import the 02 - Create PBI View script.  
 
-Run the script.  
+Run the script. 
 
 Verify you can see a view. It won't return data yet.  
 
