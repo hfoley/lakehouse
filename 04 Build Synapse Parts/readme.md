@@ -7,8 +7,6 @@ In this section we build out the last mile of our lakehouse architecture inside 
     4. Connect the Power BI template to Synapse Serverless SQL  
 
     
-**update down from here 
-
 ### Step 1 - Import the scripts ###
 Navigate within your Synpase studio and login.  In the far left pane choose Develop (paper icon).  Choose the + at the top of the middle pane.  Choose the Import option.  
 ftes
@@ -21,6 +19,8 @@ Update the script with the values for your environment.  Hit cntrl-h to get to t
 Step thru and run the code.  This builds a database, schema, external file format, external data source, and external table.  
 
 Navigate to Data in the left pane.  Select Workspace and expand SQL database.  You should now see Biometrics database now. If you don't do a refresh (top right).  Verify you see the same things as before.  
+
+We'll go through how to generate the code also. 
 
 ### Step 3 - Run script to create view ###
 We'll build a view on top of the external table to further narrow down the scope of what we'll consume with Power BI.  
