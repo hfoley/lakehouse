@@ -14,7 +14,7 @@ Below is a list of required items needed to be able to run through the workshop 
 
 
 ### Step 1 - Rights needed in Azure ###
-This workshop has been tested with different levels of access and requires owner on the resource group level.  That was required to assign rights to the Synapse MSI to data lake storage.  
+This workshop has been tested with different levels of access and requires owner on the resource group level.  That was required to assign rights to the Synapse MSI to data lake storage.  You're welcome to step through the code in your own Azure subscription.  If you don't have access to one, we've created some users in a subscription you can use for the workshop.  The users/resources in Azure will be deleted immediately after the workshop.  Let us know in the chat if you'll need a guest Azure account.  
 
 ### Step 2 - Setup Azure Cloud Shell environment ###
 We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.  Below are the steps to set this up.  You will need an Azure storage account.  
