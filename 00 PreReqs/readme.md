@@ -33,12 +33,12 @@ We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.
 9. Verify doing dir within Azure Cloud Shell that you can now see lakehouse folder.  Navigate to that folder by typing: "cd la*".  If you need to navigate back up you can do that by typing cd..
 
 ### Step 3 - Download all the files ###
-All the files we'll use for the workshop are located in this location in this repository.  You'll need to navigate back up to the lakehouse level in order to download the zip file due to how github works.  Download the zip file to a location on your machine locally.  You can delete all the files and folder except those in scripts in you'd like.  
+All the files we'll use for the workshop are located in this location in this repository.  You'll need to navigate back up to the lakehouse level in order to download the zip file due to how github works.  Download the zip file to a location on your machine locally.  You can delete all the files and folder except those in scripts folder if you'd like.  
 
 [Scripts](https://github.com/hfoley/lakehouse/tree/main/scripts) 
 
 ### Step 4 - Update the paramfile06.json parameter file ### 
-Navigate to the local location where you downloaded the files and navigate to the /scripts/posh folder.  You should see a file called paramfile06.json.  Open it within editor of choice.  All the PowerShell scripts use this file for the details it needs and it's the only file you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values you want for the names of the Azure resources.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
+Navigate to the local location where you downloaded the files and navigate to the /scripts/posh folder.  You should see a file called paramfile06.json.  Open it within editor of choice.  All the PowerShell scripts use this file for the details it needs and is the only file you need to update.  Below is a view that details what you need to fill out.  Change all the items that have <> in them with the values you want for the names of the Azure resources.  You can supply existing resources in this paramfile as well.  The PowerShell will check first if the component exists before creating it.  Those using guests accounts need to supply the existing ##Lakehouse resource group in the param06.json file.  Note some naming tips in the image below.  You can see all naming rules for Azure components https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-name-rules
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/paramfile06.jpg?raw=true)
 
