@@ -19,9 +19,9 @@ This workshop has been tested with different levels of access and requires owner
 ### Step 2 - Setup Azure Cloud Shell environment ###
 We'll utilize Azure Cloud Shell to run the PowerShell scripts for this workshop.  Below are the steps to set this up.  You will need an Azure storage account.  
 
-1. Navigate to and login to the Azure portal (azure.portal.com).  Start Azure Cloud Shell by clicking the  >_ icon in top right.  
+1. Navigate to and login to the Azure portal (azure.portal.com).  If you're using a guest account, you may want to use a private browser session.  Start Azure Cloud Shell by clicking the  >_ icon in top right.  
 2. You will be prompted for Bash or PowerShell if you've never set it up before.  Choose PowerShell. 
-3. You will be prompted to create or connect to existing storage account and fileshare.  You can get more details on storage needs at  https://docs.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage.  
+3. You will be prompted to create or connect to existing storage account and fileshare.  You can get more details on storage needs at  https://docs.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage.  Create a new storage account if you're using guest account within the ##Lakehouse resource group.  
 4. You will then see the Azure Cloud Shell prompt.  You can verify your storage account info by typing get-clouddrive in prompt and hit enter.  
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/CloudShell02.jpg?raw=true)
