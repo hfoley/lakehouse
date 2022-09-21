@@ -23,7 +23,7 @@ Open the query below connected to the Azure SQL database.
 
 `CowSampleMetadataCreate.sql`
 
-You will need to :heavy_exclamation_mark:**update**:heavy_exclamation_mark: the insert statement based on your paramfile06 value for azsqldb.  You may want to step through and run segments of the code. There are comments noting good stoping points.  
+You will need to :heavy_exclamation_mark:**update**:heavy_exclamation_mark: the insert statement based on your paramfile06 value for azsqldb. 
 
 You're now ready to move to 03 Build Pipelines module.  Go there and we'll begin to build our pipelines in Synapse Analytics workspace.  
 
