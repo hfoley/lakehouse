@@ -69,7 +69,7 @@ Hit Debug button to run.  You'll need to supply 2 parameters
 
     Supply these values for the parameters in the image below. 
 
-    image to come 
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/NotDatepipeline2.jpg?raw=true) 
 
 Verify this file is extracted.  
 
