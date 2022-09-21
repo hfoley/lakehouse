@@ -58,7 +58,7 @@ Run the query as is and view the results.
 
 Update the select statement from "TOP 100 *" to DISTINCT(Animal) so we see which animals were extracted.  Keep this query as it and we'll come back to later by publishing changes to Synapse.  
 
-![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/createpipeline.jpg?raw=true) 
+![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/DistinctAnimals.jpg?raw=true) 
 
 ### Step 5 - Run extract on one cow ###
 Navigate back to our pipelines.  Select SQL Not Date Based Extract PL.  This pipeline is a pattern that uses parameters to drive the extract.  
