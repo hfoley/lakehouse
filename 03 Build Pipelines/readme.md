@@ -56,7 +56,7 @@ Right click on the parquet file.  Select New SQL script and select top 100 rows.
 
 Run the query as is and view the results.  
 
-Update the select statement from "TOP 100 *" to DISTINCT(Animal) so we see which animals were extracted.  Keep this query as it and we'll come back to later. 
+Update the select statement from "TOP 100 *" to DISTINCT(Animal) so we see which animals were extracted.  Keep this query as it and we'll come back to later by publishing changes to Synapse.  
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/lakehouse/createpipeline.jpg?raw=true) 
 
