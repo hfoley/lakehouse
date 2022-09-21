@@ -41,7 +41,7 @@ Navigate to overview pane.  You'll see 3 endpoints.  Copy the Serverless SQL end
 ### Step 4 - Connect Power BI to Synapse ###
 We are now going to connect Power BI template file to the serverless SQL endpoint. 
 
-Open pbit file.  Paste into the parameter the serverless sql endpoint in your clipboard. You'll need to authenticate.  
+Open pbit file.  Paste into the parameter the serverless sql endpoint in your clipboard. You'll need to authenticate using Microsoft authentication and supply the account info for the LakeUserXX@hopetrainland.onmicrosoft.com account.  
 
 When you get connected to the data it doesn't show anything.  That's intentional.  We built our view to look at the last 2 months of data.  There isn't any so we'll create some.  Open a SQL client connection to our source Azure SQL database.  Open the query CowBiometricsSampleInsert.sql.  This will insert new records on a whole new cow.  
 
