@@ -73,12 +73,9 @@ Hit Debug button to run.  You'll need to supply 2 parameters
 
 Verify this file is extracted.  
 
-Navigate back to our query we generated before.  Update the query from the specific parquet filename to *.parquet and run. 
+Navigate back to our query we generated before.  Update the query from the specific parquet filename to ParquetBiometrics*.parquet and run. 
 
 Verify you can see additional animal from our 2nd pipeline run.  
-
-Change the query path to ParquetBiometrics*.parquet and view results. 
-
 
 You're now ready to move to 04 Build Synapse Parts module.  Go there and we'll begin to build our tables/views in Synapse and connect to them with Power BI.
   
