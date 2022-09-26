@@ -10,7 +10,7 @@ In this section we build out the pieces that combine to build our 2 extract pipe
 ### Step 1 - Verify paramfile06.json ###
 We'll be back in the Azure Cloud Shell environement again for this portion in our lakehouse folder.    
 
-Type the following command to view the contents of yoru paramfile06.json file has been updated in Azure Cloud Shell environment.  Validate the values are as you want them.    
+Type the following command to view the contents of your paramfile06.json file has been updated in Azure Cloud Shell environment.  Validate the values are as you want them.    
 
 `get-content paramfile06.json`
 
